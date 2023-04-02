@@ -1,0 +1,19 @@
+{
+  "item.firstmod.strange_sword": "怪剑",
+  "item.firstmod.strange_sword.tooltip": "右键有惊喜",
+  "item.firstmod.poop": "屎",
+  "item.firstmod.poop_sword": "屎剑",
+  "item.firstmod.poop_brick": "屎砖",
+  "item.firstmod.poop_bricks": "屎砖块",
+  "item.firstmod.poop_pickaxe": "屎镐",
+  "item.firstmod.poop_armor_helmet": "屎头盔",
+  "item.firstmod.poop_armor_chestplate": "屎胸甲",
+  "item.firstmod.poop_armor_leggings": "屎护腿",
+  "item.firstmod.poop_armor_boots": "屎靴子",
+  "block.firstmod.poop_bricks": "屎砖块",
+  "block.firstmod.poop_bricks.test_message": "你触碰了神圣的屎砖...",
+  "block.firstmod.lightning_block.caution": "闪电方块需要一块铜锭充能",
+  "block.firstmod.lightning_block": "闪电方块"
+
+}
+

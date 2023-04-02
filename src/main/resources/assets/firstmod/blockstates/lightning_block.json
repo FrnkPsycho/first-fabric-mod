@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "charged=false": { "model": "firstmod:block/lightning_block" },
+    "charged=true": { "model":  "firstmod:block/lightning_block_charged"}
+  }
+}
+
+

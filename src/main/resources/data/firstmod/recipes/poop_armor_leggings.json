@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "P P",
+    "P P"
+  ],
+  "key": {
+    "P": {
+      "item": "firstmod:poop"
+    }
+  },
+  "result": {
+    "item": "firstmod:poop_armor_leggings",
+    "count": 1
+  }
+}

@@ -19,7 +19,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.frnks.firstmod.FirstMod"
     ]
   },
   "mixins": [

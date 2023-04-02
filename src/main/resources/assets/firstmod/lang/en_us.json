@@ -1,0 +1,18 @@
+{
+  "item.firstmod.strange_sword": "Strange Sword",
+  "item.firstmod.strange_sword.tooltip": "Press rmb key for fun",
+  "item.firstmod.poop": "Poop",
+  "item.firstmod.poop_brick": "Poop Brick",
+  "item.firstmod.poop_bricks": "Poop Bricks",
+  "item.firstmod.poop_sword": "Poop Sword",
+  "item.firstmod.poop_pickaxe": "Poop Pickaxe",
+  "item.firstmod.poop_armor_helmet": "Poop Helmet",
+  "item.firstmod.poop_armor_chestplate": "Poop Chestplate",
+  "item.firstmod.poop_armor_leggings": "Poop Leggings",
+  "item.firstmod.poop_armor_boots": "Poop Boots",
+  "block.firstmod.poop_bricks": "Poop Bricks",
+  "block.firstmod.lightning_block": "Lightning Block",
+  "block.firstmod.poop_bricks.test_message": "You touched a poop bricks...",
+  "block.firstmod.lightning_block.caution": "Lightning block needs a copper ingot to charge."
+}
+
