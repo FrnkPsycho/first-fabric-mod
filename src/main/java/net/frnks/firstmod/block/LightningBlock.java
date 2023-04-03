@@ -11,9 +11,11 @@ import net.minecraft.entity.LightningEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Items;
+import net.minecraft.predicate.LightPredicate;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
+import net.minecraft.state.property.Properties;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
@@ -23,14 +25,15 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 
 public class LightningBlock extends Block {
+    public static final BooleanProperty CHARGED = BooleanProperty.of("charged");
     public LightningBlock(Settings settings) {
         super(settings);
         setDefaultState(getDefaultState().with(CHARGED,false));
     }
-    public static final BooleanProperty CHARGED = BooleanProperty.of("charged");
     public static final LightningBlock LIGHTNING_BLOCK = new LightningBlock(
             FabricBlockSettings.of(Material.METAL)
-                    .strength(2.0F)
+                    .luminance(state -> state.get(CHARGED) ? 15: 0)
+                    .strength(4.0F)
                     .requiresTool()
     );
     public static final BlockItem LIGHTNING_BLOCK_ITEM = new BlockItem(LIGHTNING_BLOCK, new FabricItemSettings());

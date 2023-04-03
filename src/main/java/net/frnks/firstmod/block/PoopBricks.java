@@ -15,12 +15,14 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 public class PoopBricks extends Block {
+    public static final float POOP_BRICKS_STRENGTH = 2.0f;
+    public static final Material POOP_BRICKS_MATERIAL = Material.STONE;
     public PoopBricks(Settings settings) {
         super(settings);
     }
     public static final PoopBricks POOP_BRICKS = new PoopBricks(
-            FabricBlockSettings.of(Material.STONE)
-                    .strength(1.0f)
+            FabricBlockSettings.of(POOP_BRICKS_MATERIAL)
+                    .strength(POOP_BRICKS_STRENGTH)
                     .requiresTool()
     );
     public static final BlockItem POOP_BRICKS_ITEM = new BlockItem(POOP_BRICKS, new FabricItemSettings());

@@ -17,12 +17,17 @@ public class RegisterBlocks {
         Registry.register(Registries.ITEM, new Identifier("firstmod", "poop_bricks_stairs"), PoopBricksStairs.POOP_BRICKS_STAIRS_ITEM);
         Registry.register(Registries.BLOCK, new Identifier("firstmod", "lightning_block"), LightningBlock.LIGHTNING_BLOCK);
         Registry.register(Registries.ITEM, new Identifier("firstmod", "lightning_block"), LightningBlock.LIGHTNING_BLOCK_ITEM);
+        Registry.register(Registries.BLOCK, new Identifier("firstmod", "poop_bricks_vertical_slab"), PoopBricksVerticalSlab.POOP_BRICKS_VERTICAL_SLAB);
+        Registry.register(Registries.ITEM, new Identifier("firstmod", "poop_bricks_vertical_slab"), PoopBricksVerticalSlab.POOP_BRICKS_VERTICAL_SLAB_ITEM);
+        Registry.register(Registries.BLOCK, new Identifier("firstmod", "polished_andesite_vertical_slab"), PolishedAndesiteVerticalSlab.POLISHED_ANDESITE_VERTICAL_SLAB);
+        Registry.register(Registries.ITEM, new Identifier("firstmod", "polished_andesite_vertical_slab"), PolishedAndesiteVerticalSlab.POLISHED_ANDESITE_VERTICAL_SLAB_ITEM);
 
         // Add to ItemGroup
         var itemList = new ArrayList<Item>();
         itemList.add(PoopBricks.POOP_BRICKS_ITEM);
         itemList.add(PoopBricksStairs.POOP_BRICKS_STAIRS_ITEM);
-        itemList.add(LightningBlock.LIGHTNING_BLOCK_ITEM);
+        itemList.add(PoopBricksVerticalSlab.POOP_BRICKS_VERTICAL_SLAB_ITEM);
+        itemList.add(PolishedAndesiteVerticalSlab.POLISHED_ANDESITE_VERTICAL_SLAB_ITEM);
         itemList.add(LightningBlock.LIGHTNING_BLOCK_ITEM);
         for ( var item: itemList) {
             ItemGroupEvents.modifyEntriesEvent(itemGroup).register(content -> content.add(item));

@@ -13,9 +13,7 @@ public class PoopBricksStairs extends StairsBlock {
     }
     public static final PoopBricksStairs POOP_BRICKS_STAIRS = new PoopBricksStairs(
             PoopBricks.POOP_BRICKS.getDefaultState(),
-            FabricBlockSettings.of(Material.STONE)
-                    .strength(1.0f)
-                    .requiresTool()
+            FabricBlockSettings.copyOf(PoopBricks.POOP_BRICKS)
     );
 
     public static final BlockItem POOP_BRICKS_STAIRS_ITEM = new BlockItem(POOP_BRICKS_STAIRS, new FabricItemSettings());
