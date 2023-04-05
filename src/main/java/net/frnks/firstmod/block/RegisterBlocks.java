@@ -20,6 +20,7 @@ public class RegisterBlocks {
         Registry.register(Registries.BLOCK, new Identifier("firstmod", "poop_barrel_block"), PoopBarrelBlock.POOP_BARREL_BLOCK);
         Registry.register(Registries.BLOCK, new Identifier("firstmod", "invisible_block"), InvisibleBlock.INVISIBLE_BLOCK);
         Registry.register(Registries.BLOCK, new Identifier("firstmod", "transparent_block"), TransparentBlock.TRANSPARENT_BLOCK);
+        Registry.register(Registries.BLOCK, TopSidedFurnaceBlock.TOP_SIDED_FURNACE_ID, TopSidedFurnaceBlock.TOP_SIDED_FURNACE);
 
 
         Registry.register(Registries.ITEM, new Identifier("firstmod", "poop_bricks"), PoopBricks.POOP_BRICKS_ITEM);
@@ -31,6 +32,7 @@ public class RegisterBlocks {
         Registry.register(Registries.ITEM, new Identifier("firstmod", "poop_barrel_block"), PoopBarrelBlock.POOP_BARREL_BLOCK_ITEM);
         Registry.register(Registries.ITEM, new Identifier("firstmod", "invisible_block"), InvisibleBlock.INVISIBLE_BLOCK_ITEM);
         Registry.register(Registries.ITEM, new Identifier("firstmod", "transparent_block"), TransparentBlock.TRANSPARENT_BLOCK_ITEM);
+        Registry.register(Registries.ITEM, TopSidedFurnaceBlock.TOP_SIDED_FURNACE_ID, TopSidedFurnaceBlock.TOP_SIDED_FURNACE_ITEM);
 
         Registry.register(Registries.BLOCK_ENTITY_TYPE, new Identifier("firstmod", "poop_chest_block"), PoopChestBlockEntity.POOP_CHEST_BLOCK_ENTITY);
         Registry.register(Registries.BLOCK_ENTITY_TYPE, new Identifier("firstmod", "poop_barrel_block"), PoopBarrelBlockEntity.POOP_BARREL_BLOCK_ENTITY);
@@ -46,6 +48,7 @@ public class RegisterBlocks {
         itemList.add(PoopBarrelBlock.POOP_BARREL_BLOCK_ITEM);
         itemList.add(InvisibleBlock.INVISIBLE_BLOCK_ITEM);
         itemList.add(TransparentBlock.TRANSPARENT_BLOCK_ITEM);
+        itemList.add(TopSidedFurnaceBlock.TOP_SIDED_FURNACE_ITEM);
         for ( var item: itemList) {
             ItemGroupEvents.modifyEntriesEvent(itemGroup).register(content -> content.add(item));
         }
