@@ -11,6 +11,7 @@ import net.frnks.firstmod.armor.RegisterArmorItems;
 import net.frnks.firstmod.block.RegisterBlocks;
 import net.frnks.firstmod.material.Poop;
 import net.frnks.firstmod.material.RegisterMaterialItems;
+import net.frnks.firstmod.screen.RegisterScreens;
 import net.frnks.firstmod.tool.RegisterToolItems;
 
 import net.minecraft.item.*;
@@ -30,6 +31,7 @@ public class FirstMod implements ModInitializer {
 			new Identifier("firstmod", "item_group"))
 			.icon(() -> new ItemStack(poop))
 			.build();
+
 	@Override
 	public void onInitialize() {
 //		ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(content -> {
@@ -43,6 +45,7 @@ public class FirstMod implements ModInitializer {
 		RegisterBlocks.register(FIRST_MOD_ITEM_GROUP);
 		RegisterArmorItems.register(FIRST_MOD_ITEM_GROUP);
 		RegisterToolItems.register(FIRST_MOD_ITEM_GROUP);
+		RegisterScreens.register();
 
 		LOGGER.info("Hello Fabric world!");
 	}

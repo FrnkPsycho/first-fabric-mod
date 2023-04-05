@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "firstmod",
   "version": "${version}",
 
   "name": "Example Mod",
@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "net.frnks.firstmod.FirstMod"
+    ],
+    "client": [
+      "net.frnks.firstmod.FirstModClient"
     ]
   },
   "mixins": [
