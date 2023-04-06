@@ -123,7 +123,7 @@ public class TopSidedFurnaceModel implements UnbakedModel, BakedModel, FabricBak
         for ( Direction direction : Direction.values() ) {
             int spriteIndex = direction == Direction.UP ? 0 : 1;
             emitter.square(direction, 0.0f, 0.0f, 1.0f, 1.0f, 0.0f);
-            emitter.spriteBake(0, sprites[spriteIndex], MutableQuadView.BAKE_NORMALIZED);
+            emitter.spriteBake(0, sprites[spriteIndex], MutableQuadView.BAKE_LOCK_UV);
             emitter.spriteColor(0, -1, -1, -1, -1);
             emitter.emit();
         }

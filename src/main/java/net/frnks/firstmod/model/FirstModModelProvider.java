@@ -18,7 +18,6 @@ public class FirstModModelProvider implements ModelResourceProvider {
     @Override
     public @Nullable UnbakedModel loadModelResource(Identifier resourceId, ModelProviderContext context) throws ModelProviderException {
         if ( resourceId.equals(TOP_SIDED_FURNACE_MODEL_BLOCK) || resourceId.equals(TOP_SIDED_FURNACE_MODEL_ITEM)) {
-            System.out.println("SUCCESS LOADED CUSTOM MODEL!!!!");
             return TOP_SIDED_FURNACE_MODEL;
         } else {
             return null;
