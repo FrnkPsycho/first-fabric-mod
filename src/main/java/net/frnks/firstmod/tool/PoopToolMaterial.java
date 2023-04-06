@@ -1,6 +1,6 @@
 package net.frnks.firstmod.tool;
 
-import net.frnks.firstmod.material.Poop;
+import net.frnks.firstmod.item.Poop;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;

@@ -1,4 +1,4 @@
-package net.frnks.firstmod.material;
+package net.frnks.firstmod.item;
 
 import net.minecraft.item.Item;
 

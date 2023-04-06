@@ -23,6 +23,9 @@
     ],
     "client": [
       "net.frnks.firstmod.FirstModClient"
+    ],
+    "fabric-datagen": [
+      "net.frnks.firstmod.FirstModDataGenerator"
     ]
   },
   "mixins": [

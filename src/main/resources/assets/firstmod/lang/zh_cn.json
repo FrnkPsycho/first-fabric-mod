@@ -13,7 +13,8 @@
   "block.firstmod.poop_bricks": "屎砖块",
   "block.firstmod.poop_bricks.test_message": "你触碰了神圣的屎砖...",
   "block.firstmod.lightning_block.caution": "闪电方块需要一块铜锭充能",
-  "block.firstmod.lightning_block": "闪电方块"
+  "block.firstmod.lightning_block": "闪电方块",
+  "item.firstmod.iron_seed": "铁种子"
 
 }
 

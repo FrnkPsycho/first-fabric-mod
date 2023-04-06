@@ -9,8 +9,8 @@ import net.fabricmc.fabric.api.registry.FuelRegistry;
 
 import net.frnks.firstmod.armor.RegisterArmorItems;
 import net.frnks.firstmod.block.RegisterBlocks;
-import net.frnks.firstmod.material.Poop;
-import net.frnks.firstmod.material.RegisterMaterialItems;
+import net.frnks.firstmod.item.Poop;
+import net.frnks.firstmod.item.RegisterItems;
 import net.frnks.firstmod.screen.RegisterScreens;
 import net.frnks.firstmod.tool.RegisterToolItems;
 
@@ -41,7 +41,7 @@ public class FirstMod implements ModInitializer {
 		CompostingChanceRegistry.INSTANCE.add(poop, 0.9F);
 		ItemGroupEvents.modifyEntriesEvent(FIRST_MOD_ITEM_GROUP).register(content -> content.add(poop));
 
-		RegisterMaterialItems.register(FIRST_MOD_ITEM_GROUP);
+		RegisterItems.register(FIRST_MOD_ITEM_GROUP);
 		RegisterBlocks.register(FIRST_MOD_ITEM_GROUP);
 		RegisterArmorItems.register(FIRST_MOD_ITEM_GROUP);
 		RegisterToolItems.register(FIRST_MOD_ITEM_GROUP);

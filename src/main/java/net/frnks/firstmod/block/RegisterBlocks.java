@@ -22,6 +22,7 @@ public class RegisterBlocks {
         Registry.register(Registries.BLOCK, new Identifier("firstmod", "transparent_block"), TransparentBlock.TRANSPARENT_BLOCK);
         Registry.register(Registries.BLOCK, TopSidedFurnaceBlock.TOP_SIDED_FURNACE_ID, TopSidedFurnaceBlock.TOP_SIDED_FURNACE);
         Registry.register(Registries.BLOCK, AwesomeJukeboxBlock.AWESOME_JUKEBOX_BLOCK_ID, AwesomeJukeboxBlock.AWESOME_JUKEBOX_BLOCK);
+        Registry.register(Registries.BLOCK, IronCropBlock.IRON_CROP_BLOCK_ID, IronCropBlock.IRON_CROP_BLOCK);
 
 
         Registry.register(Registries.ITEM, new Identifier("firstmod", "poop_bricks"), PoopBricks.POOP_BRICKS_ITEM);
