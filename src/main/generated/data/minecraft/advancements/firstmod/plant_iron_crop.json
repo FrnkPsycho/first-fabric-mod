@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:firstmod/get_iron_seed",
+  "criteria": {
+    "plant_iron_crop": {
+      "conditions": {
+        "block": "firstmod:iron_crop_block"
+      },
+      "trigger": "minecraft:placed_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": {
+      "translate": "advancement.plant_iron_crop_description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:iron_nugget"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.plant_iron_crop_title"
+    }
+  },
+  "requirements": [
+    [
+      "plant_iron_crop"
+    ]
+  ]
+}

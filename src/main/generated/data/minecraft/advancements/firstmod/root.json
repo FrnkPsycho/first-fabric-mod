@@ -1,0 +1,37 @@
+{
+  "criteria": {
+    "get_poop": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "firstmod:poop"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": {
+      "translate": "advancement.get_first_poop_description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "firstmod:poop"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.get_first_poop_title"
+    }
+  },
+  "requirements": [
+    [
+      "get_poop"
+    ]
+  ]
+}

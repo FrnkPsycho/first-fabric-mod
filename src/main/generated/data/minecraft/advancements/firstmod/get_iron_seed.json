@@ -1,0 +1,41 @@
+{
+  "parent": "minecraft:firstmod/root",
+  "criteria": {
+    "get_iron_seed": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "firstmod:iron_seed"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": {
+      "translate": "advancement.get_iron_seed_description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "firstmod:iron_seed"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.get_iron_seed_title"
+    }
+  },
+  "requirements": [
+    [
+      "get_iron_seed"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}
