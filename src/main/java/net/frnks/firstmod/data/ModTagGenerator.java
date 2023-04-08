@@ -16,11 +16,10 @@ import org.jetbrains.annotations.Nullable;
 import java.util.concurrent.CompletableFuture;
 
 
-public class ModTagGenerator extends FabricTagProvider<Item> {
+public class ModTagGenerator extends FabricTagProvider.ItemTagProvider {
     public static final TagKey<Item> DELICIOUS_ITEMS = TagKey.of(RegistryKeys.ITEM, new Identifier("firstmod", "delicious_items"));
-
-    public ModTagGenerator(FabricDataOutput output, RegistryKey<? extends Registry<Item>> registryKey, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
-        super(output, registryKey, registriesFuture);
+    public ModTagGenerator(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
+        super(output, registriesFuture);
     }
 
     @Override

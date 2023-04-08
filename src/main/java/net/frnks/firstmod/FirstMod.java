@@ -19,6 +19,7 @@ import net.frnks.firstmod.item.RegisterItems;
 import net.frnks.firstmod.screen.RegisterScreens;
 import net.frnks.firstmod.tool.RegisterToolItems;
 
+import net.frnks.firstmod.world.gen.ModWorldGeneration;
 import net.minecraft.client.network.ClientPlayerInteractionManager;
 import net.minecraft.client.world.ClientWorld;
 import net.minecraft.entity.LivingEntity;
@@ -67,6 +68,8 @@ public class FirstMod implements ModInitializer {
 		RegisterArmorItems.register(FIRST_MOD_ITEM_GROUP);
 		RegisterToolItems.register(FIRST_MOD_ITEM_GROUP);
 		RegisterScreens.register();
+
+		ModWorldGeneration.generateModWorldGen();
 		LOGGER.info("Hello Fabric world!");
 	}
 }

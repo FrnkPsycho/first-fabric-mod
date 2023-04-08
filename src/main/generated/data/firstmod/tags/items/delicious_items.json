@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:rotten_flesh",
+    "minecraft:slime_ball",
+    "minecraft:spider_eye",
+    "minecraft:poisonous_potato",
+    {
+      "id": "#minecraft:dirt",
+      "required": false
+    }
+  ]
+}
