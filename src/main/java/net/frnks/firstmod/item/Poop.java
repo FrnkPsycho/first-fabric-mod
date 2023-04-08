@@ -6,4 +6,5 @@ public class Poop extends Item {
     public Poop(Settings settings) {
         super(settings);
     }
+
 }

@@ -18,6 +18,7 @@ public class RegisterItems {
 //        Registry.register(Registries.ITEM, new Identifier("firstmod", "poop"), POOP); Do not register Poop because it is registered at entry class.
         Registry.register(Registries.ITEM, new Identifier("firstmod", "poop_brick"), POOP_BRICK);
         Registry.register(Registries.ITEM, new Identifier("firstmod", "iron_seed"), IronSeed.IRON_SEED);
+        Registry.register(Registries.ITEM, new Identifier("firstmod", "strange_food"), StrangeFood.STRANGE_FOOD);
 
         // Add to Fuel
 
@@ -26,6 +27,7 @@ public class RegisterItems {
         var itemList = new ArrayList<Item>();
         itemList.add(POOP_BRICK);
         itemList.add(IronSeed.IRON_SEED);
+        itemList.add(StrangeFood.STRANGE_FOOD);
         for ( var item: itemList) {
             ItemGroupEvents.modifyEntriesEvent(itemGroup).register(content -> content.add(item));
         }
