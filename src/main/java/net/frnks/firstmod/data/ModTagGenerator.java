@@ -2,6 +2,9 @@ package net.frnks.firstmod.data;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.frnks.firstmod.FirstMod;
+import net.frnks.firstmod.block.RedMapleTreeBlocks;
+import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.registry.*;
@@ -14,17 +17,8 @@ import java.util.concurrent.CompletableFuture;
 
 
 public class ModTagGenerator extends FabricTagProvider<Item> {
-    private static final TagKey<Item> DELICIOUS_ITEMS = TagKey.of(RegistryKeys.ITEM, new Identifier("firstmod", "delicious_items"));
+    public static final TagKey<Item> DELICIOUS_ITEMS = TagKey.of(RegistryKeys.ITEM, new Identifier("firstmod", "delicious_items"));
 
-    /**
-     * Constructs a new {@link FabricTagProvider} with the default computed path.
-     *
-     * <p>Common implementations of this class are provided.
-     *
-     * @param output           the {@link FabricDataOutput} instance
-     * @param registryKey
-     * @param registriesFuture the backing registry for the tag type
-     */
     public ModTagGenerator(FabricDataOutput output, RegistryKey<? extends Registry<Item>> registryKey, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registryKey, registriesFuture);
     }
@@ -37,5 +31,12 @@ public class ModTagGenerator extends FabricTagProvider<Item> {
                 .add(Items.SPIDER_EYE)
                 .add(Items.POISONOUS_POTATO)
                 .addOptionalTag(ItemTags.DIRT);
+        getOrCreateTagBuilder(RedMapleTreeBlocks.RED_MAPLE_LOGS)
+                .add(RedMapleTreeBlocks.RED_MAPLE_LOG_ITEM)
+                .add(RedMapleTreeBlocks.RED_MAPLE_WOOD_ITEM)
+                .add(RedMapleTreeBlocks.STRIPPED_RED_MAPLE_LOG_ITEM)
+                .add(RedMapleTreeBlocks.STRIPPED_RED_MAPLE_WOOD_ITEM);
+        getOrCreateTagBuilder(ItemTags.PLANKS)
+                .add(RedMapleTreeBlocks.RED_MAPLE_PLANKS_ITEM);
     }
 }

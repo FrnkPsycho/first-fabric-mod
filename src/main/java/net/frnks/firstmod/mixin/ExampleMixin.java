@@ -13,4 +13,5 @@ public class ExampleMixin {
 	private void init(CallbackInfo info) {
 		FirstMod.LOGGER.info("This line is printed by an example mod mixin!");
 	}
+
 }

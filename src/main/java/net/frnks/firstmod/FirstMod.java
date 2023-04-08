@@ -42,12 +42,13 @@ import org.slf4j.LoggerFactory;
 
 
 public class FirstMod implements ModInitializer {
+	public static final String MOD_ID = "firstmod";
 	public static final Logger LOGGER = LoggerFactory.getLogger("firstmod");
 	public static final Poop poop = Registry.register(
 			Registries.ITEM,
 			new Identifier("firstmod", "poop"),
 			new Poop(new FabricItemSettings()));
-	private static final ItemGroup FIRST_MOD_ITEM_GROUP = FabricItemGroup.builder(
+	public static final ItemGroup FIRST_MOD_ITEM_GROUP = FabricItemGroup.builder(
 					new Identifier("firstmod", "item_group"))
 			.icon(() -> new ItemStack(poop))
 			.build();

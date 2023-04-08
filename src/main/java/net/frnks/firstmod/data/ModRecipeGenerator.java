@@ -2,6 +2,7 @@ package net.frnks.firstmod.data;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.frnks.firstmod.block.RedMapleTreeBlocks;
 import net.frnks.firstmod.item.IronSeed;
 import net.minecraft.advancement.criterion.Criterion;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
@@ -38,5 +39,6 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
 //                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(IronSeed.IRON_SEED)));
 
         offerCompactingRecipe(exporter, RecipeCategory.MISC, Items.IRON_NUGGET, IronSeed.IRON_SEED, "nope");
+        offerPlanksRecipe(exporter, RedMapleTreeBlocks.RED_MAPLE_PLANKS, RedMapleTreeBlocks.RED_MAPLE_LOGS, 4);
     }
 }

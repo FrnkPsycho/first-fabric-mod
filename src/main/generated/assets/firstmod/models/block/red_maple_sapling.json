@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "firstmod:block/red_maple_sapling"
+  }
+}

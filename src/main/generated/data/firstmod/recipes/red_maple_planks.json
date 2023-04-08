@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "firstmod:red_maple_items"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "firstmod:red_maple_planks"
+  }
+}

@@ -1,0 +1,4 @@
+// 1.19.4	2023-04-08T21:36:23.150655995	Example Mod/Advancements
+e9257c547962a55c4dd3a590c1ac7cba3a799b47 data/minecraft/advancements/firstmod/plant_iron_crop.json
+cb36d87ef243c8224e1f3755621db4c8a5d4283d data/minecraft/advancements/firstmod/get_iron_seed.json
+e1bcd13816f3147801480ab2bcbd1159d8a612b7 data/minecraft/advancements/firstmod/root.json

@@ -1,8 +1,16 @@
 package net.frnks.firstmod.block;
 
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
+import net.frnks.firstmod.FirstMod;
+import net.minecraft.block.Block;
+import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.block.entity.BlockEntityType;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -58,5 +66,33 @@ public class RegisterBlocks {
         for ( var item: itemList) {
             ItemGroupEvents.modifyEntriesEvent(itemGroup).register(content -> content.add(item));
         }
+
+        RegisterFlammableBlocks.register();
+        RegisterStrippableBlocks.register();
     }
+
+    public static Block registerBlock(String name, Block block, ItemGroup group) {
+        return Registry.register(Registries.BLOCK, new Identifier(FirstMod.MOD_ID, name), block);
+    }
+
+    public static Item registerBlockItem(String name, Block block, ItemGroup group) {
+        Item item = Registry.register(Registries.ITEM, new Identifier(FirstMod.MOD_ID, name),
+                new BlockItem(block, new FabricItemSettings()));
+        ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
+        return item;
+    }
+//    public static final BlockEntityType<PoopChestBlockEntity> POOP_CHEST_BLOCK_ENTITY =
+//            FabricBlockEntityTypeBuilder.create(
+//                    PoopChestBlockEntity::new,
+//                    PoopChestBlock.POOP_CHEST_BLOCK
+//            ).build();
+//
+//    public static BlockEntityType<? extends BlockEntity> registerBlockEntity(String name, Block block, BlockEntity blockEntity) {
+//        return Registry.register(Registries.BLOCK_ENTITY_TYPE, new Identifier(FirstMod.MOD_ID, name),
+//                FabricBlockEntityTypeBuilder.create(
+//                        blockEntity.getClass()::new,
+//                        block
+//                ).build()
+//        );
+//    }
 }

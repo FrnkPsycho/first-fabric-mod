@@ -21,14 +21,13 @@ public class ModAdvancementGenerator extends FabricAdvancementProvider {
     public ModAdvancementGenerator(FabricDataOutput output) {
         super(output);
     }
-
     @Override
     public void generateAdvancement(Consumer<Advancement> consumer) {
         new ModAdvancements().accept(consumer);
     }
 }
 
-class ModAdvancements implements  Consumer<Consumer<Advancement>> {
+class ModAdvancements implements Consumer<Consumer<Advancement>> {
     @Override
     public void accept(Consumer<Advancement> advancementConsumer) {
         Advancement rootAdvancement = Advancement.Builder.create()
