@@ -3,6 +3,7 @@ package net.frnks.firstmod.data;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.frnks.firstmod.block.IronCropBlock;
+import net.frnks.firstmod.block.PoopOreBlocks;
 import net.frnks.firstmod.block.RedMapleTreeBlocks;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
@@ -22,6 +23,8 @@ public class ModModelGenerator extends FabricModelProvider {
         blockStateModelGenerator.registerTintableCrossBlockState(RedMapleTreeBlocks.RED_MAPLE_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerCubeAllModelTexturePool(RedMapleTreeBlocks.RED_MAPLE_PLANKS);
         blockStateModelGenerator.registerCubeAllModelTexturePool(RedMapleTreeBlocks.RED_MAPLE_LEAVES);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(PoopOreBlocks.POOP_ORE_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(PoopOreBlocks.DEEPSLATE_POOP_ORE_BLOCK);
     }
 
     @Override

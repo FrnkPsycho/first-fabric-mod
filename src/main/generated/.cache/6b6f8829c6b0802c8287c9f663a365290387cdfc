@@ -1,4 +1,5 @@
-// 1.19.4	2023-04-08T22:38:38.370690067	Example Mod/Block Loot Tables
+// 1.19.4	2023-04-09T00:13:45.744589802	Example Mod/Block Loot Tables
+d95578eec3228d4e7e239c718fb150f2bb05fdf8 data/firstmod/loot_tables/blocks/poop_ore_block.json
 2b2a4bde1a1c86393b28fa3ff9b81ef1ddeed22d data/firstmod/loot_tables/blocks/red_maple_sapling.json
 2b2a4bde1a1c86393b28fa3ff9b81ef1ddeed22d data/firstmod/loot_tables/blocks/stripped_red_maple_log.json
 2b2a4bde1a1c86393b28fa3ff9b81ef1ddeed22d data/firstmod/loot_tables/blocks/red_maple_log.json

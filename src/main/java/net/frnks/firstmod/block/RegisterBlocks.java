@@ -67,11 +67,13 @@ public class RegisterBlocks {
             ItemGroupEvents.modifyEntriesEvent(itemGroup).register(content -> content.add(item));
         }
 
+        PoopOreBlocks.register();
+        RedMapleTreeBlocks.register();
         RegisterFlammableBlocks.register();
         RegisterStrippableBlocks.register();
     }
 
-    public static Block registerBlock(String name, Block block, ItemGroup group) {
+    public static Block registerBlock(String name, Block block) {
         return Registry.register(Registries.BLOCK, new Identifier(FirstMod.MOD_ID, name), block);
     }
 

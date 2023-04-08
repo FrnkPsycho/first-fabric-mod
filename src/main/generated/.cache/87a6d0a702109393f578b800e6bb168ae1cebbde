@@ -1,3 +1,5 @@
-// 1.19.4	2023-04-08T22:38:38.372193297	Example Mod/firstmod
+// 1.19.4	2023-04-09T00:13:45.745983569	Example Mod/firstmod
+dd41697c564c0167b4102b92f27dbe80e10bfa0a data/firstmod/worldgen/placed_feature/poop_ore_placed.json
 b281d965dd985395f3e1a472365e5b4ce5526334 data/firstmod/worldgen/configured_feature/red_maple_tree.json
+b98fd0e912159bd976bc084d61ab266091171f64 data/firstmod/worldgen/configured_feature/poop_ore.json
 aa44c6b66dd169aa5fb5deb2a2805d14b912b695 data/firstmod/worldgen/placed_feature/red_maple_tree_placed.json

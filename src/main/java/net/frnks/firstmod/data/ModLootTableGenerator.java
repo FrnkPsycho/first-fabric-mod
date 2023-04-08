@@ -3,7 +3,9 @@ package net.frnks.firstmod.data;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.frnks.firstmod.FirstMod;
 import net.frnks.firstmod.block.IronCropBlock;
+import net.frnks.firstmod.block.PoopOreBlocks;
 import net.frnks.firstmod.block.RedMapleTreeBlocks;
 import net.frnks.firstmod.item.IronSeed;
 import net.minecraft.block.Block;
@@ -16,17 +18,11 @@ import net.minecraft.loot.LootTable;
 import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
 import net.minecraft.loot.condition.LootCondition;
 import net.minecraft.loot.entry.ItemEntry;
-import net.minecraft.loot.entry.LeafEntry;
-import net.minecraft.loot.entry.LootPoolEntry;
 import net.minecraft.loot.function.ApplyBonusLootFunction;
-import net.minecraft.loot.function.LootingEnchantLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
-import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.predicate.StatePredicate;
 import net.minecraft.state.property.IntProperty;
-
-import java.util.Collection;
 
 
 public class ModLootTableGenerator extends FabricBlockLootTableProvider {
@@ -48,6 +44,7 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(RedMapleTreeBlocks.STRIPPED_RED_MAPLE_WOOD, new BlockItem(RedMapleTreeBlocks.STRIPPED_RED_MAPLE_WOOD, new FabricItemSettings()));
         addDrop(RedMapleTreeBlocks.RED_MAPLE_PLANKS, new BlockItem(RedMapleTreeBlocks.RED_MAPLE_PLANKS, new FabricItemSettings()));
         addDrop(RedMapleTreeBlocks.RED_MAPLE_SAPLING, new BlockItem(RedMapleTreeBlocks.RED_MAPLE_SAPLING, new FabricItemSettings()));
+        addDrop(PoopOreBlocks.POOP_ORE_BLOCK, FirstMod.poop);
 
     }
 

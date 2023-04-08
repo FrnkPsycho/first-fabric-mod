@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "firstmod:lightning_block"
+    "firstmod:lightning_block",
+    "firstmod:poop_ore_block"
   ]
 }

@@ -18,7 +18,7 @@ public class RedMapleTreeBlocks {
 //            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).strength(4f).requiresTool()));
     public static final TagKey<Item> RED_MAPLE_LOGS = TagKey.of(RegistryKeys.ITEM, new Identifier(FirstMod.MOD_ID, "red_maple_items"));
     public static final Block RED_MAPLE_LOG = RegisterBlocks.registerBlock("red_maple_log",
-        new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).strength(4.0f).requiresTool()), FirstMod.FIRST_MOD_ITEM_GROUP);
+        new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).strength(4.0f).requiresTool()));
     public static final Block RED_MAPLE_WOOD = Registry.register(Registries.BLOCK, new Identifier(FirstMod.MOD_ID, "red_maple_wood"),
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD).strength(4f).requiresTool()));
     public static final Block STRIPPED_RED_MAPLE_LOG = Registry.register(Registries.BLOCK, new Identifier(FirstMod.MOD_ID, "stripped_red_maple_log"),
@@ -41,4 +41,5 @@ public class RedMapleTreeBlocks {
     public static final Item RED_MAPLE_LEAVES_ITEM = RegisterBlocks.registerBlockItem("red_maple_leaves", RED_MAPLE_LEAVES, FirstMod.FIRST_MOD_ITEM_GROUP);
     public static final Item RED_MAPLE_SAPLING_ITEM = RegisterBlocks.registerBlockItem("red_maple_sapling", RED_MAPLE_SAPLING, FirstMod.FIRST_MOD_ITEM_GROUP);
 
+    public static void register() {}
 }

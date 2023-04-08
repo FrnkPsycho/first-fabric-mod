@@ -8,9 +8,11 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
+import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
+import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
 import net.minecraft.world.gen.placementmodifier.PlacementModifier;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
@@ -19,11 +21,14 @@ import java.util.List;
 
 public class ModPlaceFeatures {
     public static final RegistryKey<PlacedFeature> RED_MAPLE_PLACED_KEY = registryKey("red_maple_tree_placed");
+    public static final RegistryKey<PlacedFeature> POOP_ORE_PLACED_KEY = registryKey("poop_ore_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var lookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
         register(context, RED_MAPLE_PLACED_KEY, lookup.getOrThrow(ModConfigureFeatures.RED_MAPLE_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(1, 0.1f, 2), RedMapleTreeBlocks.RED_MAPLE_SAPLING));
+        register(context, POOP_ORE_PLACED_KEY, lookup.getOrThrow(ModConfigureFeatures.POOP_ORE_KEY),
+                ModOrePlacementFeatures.modifiersWithCount(16, HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
     }
     private static void register(Registerable<PlacedFeature> context,
                                  RegistryKey<PlacedFeature> key,
